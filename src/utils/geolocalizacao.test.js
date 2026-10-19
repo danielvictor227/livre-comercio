@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {distanciaKm,formatarDistancia} from './geolocalizacao.js';
+import {filtrarEstabelecimentos,normalizarEstabelecimento,obterEstabelecimentosDoCatalogo} from '../services/estabelecimentos.js';
+import {stores} from '../data/catalog.js';
+test('localização idêntica resulta em zero',()=>assert.equal(distanciaKm({latitude:-16,longitude:-48},{latitude:-16,longitude:-48}),0));
+test('distância não calculada para coordenadas inválidas',()=>assert.equal(distanciaKm({latitude:200,longitude:0},{latitude:0,longitude:0}),null));
+test('formata quilometragem',()=>assert.equal(formatarDistancia(1.5),'1,5 km'));
+test('mapa e vitrines têm os mesmos identificadores',()=>assert.deepEqual(obterEstabelecimentosDoCatalogo(stores).map(s=>s.id),stores.map(s=>s.id)));
+test('filtro ignora acentos',()=>assert.ok(filtrarEstabelecimentos(obterEstabelecimentosDoCatalogo(stores),'essencia').some(s=>s.id==='essencia')));
+test('ignora lojas sem posição válida',()=>assert.equal(normalizarEstabelecimento({id:'teste',name:'Teste',localizacao:{latitude:100,longitude:30}}),null));
