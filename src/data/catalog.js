@@ -9,6 +9,7 @@ export const categories = [
 export const stores = [
   {
     id: "casa-do-grao",
+    localizacao: { latitude: -16.3281, longitude: -48.9530 },
     name: "Casa do Grão",
     category: "Alimentação",
     initials: "CG",
@@ -20,6 +21,7 @@ export const stores = [
   },
   {
     id: "atelie-raiz",
+    localizacao: { latitude: -16.3248, longitude: -48.9474 },
     name: "Ateliê Raiz",
     category: "Casa & decoração",
     initials: "AR",
@@ -31,6 +33,7 @@ export const stores = [
   },
   {
     id: "linha-leve",
+    localizacao: { latitude: -16.3315, longitude: -48.9608 },
     name: "Linha Leve",
     category: "Moda",
     initials: "LL",
@@ -41,6 +44,7 @@ export const stores = [
   },
   {
     id: "essencia",
+    localizacao: { latitude: -16.3226, longitude: -48.9569 },
     name: "Essência Natural",
     category: "Bem-estar",
     initials: "EN",
