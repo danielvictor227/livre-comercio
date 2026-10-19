@@ -1,0 +1,151 @@
+export const categories = [
+  "Todos",
+  "Alimentação",
+  "Casa & decoração",
+  "Moda",
+  "Bem-estar",
+  "Serviços",
+];
+export const stores = [
+  {
+    id: "casa-do-grao",
+    localizacao: { latitude: -16.3281, longitude: -48.9530 },
+    name: "Casa do Grão",
+    category: "Alimentação",
+    initials: "CG",
+    color: "#dcb786",
+    description:
+      "Café fresco, pães artesanais e pequenos rituais que deixam o dia melhor.",
+    address: "Rua das Flores, 120 · Centro",
+    hours: "Segunda a sábado, 8h às 18h",
+  },
+  {
+    id: "atelie-raiz",
+    localizacao: { latitude: -16.3248, longitude: -48.9474 },
+    name: "Ateliê Raiz",
+    category: "Casa & decoração",
+    initials: "AR",
+    color: "#b5bb95",
+    description:
+      "Objetos com propósito, feitos à mão para uma casa cheia de histórias.",
+    address: "Rua do Jardim, 42 · Vila Nova",
+    hours: "Segunda a sexta, 9h às 18h",
+  },
+  {
+    id: "linha-leve",
+    localizacao: { latitude: -16.3315, longitude: -48.9608 },
+    name: "Linha Leve",
+    category: "Moda",
+    initials: "LL",
+    color: "#c7b3a7",
+    description: "Peças essenciais e confortáveis para acompanhar a vida real.",
+    address: "Avenida Central, 85 · Centro",
+    hours: "Segunda a sábado, 10h às 19h",
+  },
+  {
+    id: "essencia",
+    localizacao: { latitude: -16.3226, longitude: -48.9569 },
+    name: "Essência Natural",
+    category: "Bem-estar",
+    initials: "EN",
+    color: "#b9c9ae",
+    description:
+      "Uma pausa no seu dia. Cuidados naturais e serviços de bem-estar.",
+    address: "Rua das Acácias, 310 · Vila Nova",
+    hours: "Terça a sábado, 9h às 17h",
+  },
+];
+export const products = [
+  {
+    id: "cafe",
+    name: "Café especial da casa",
+    category: "Alimentação",
+    price: 34.9,
+    storeId: "casa-do-grao",
+    available: true,
+    art: "coffee",
+    tag: "Mais procurado",
+    description:
+      "Café torrado em pequenos lotes, com notas de chocolate e caramelo. Pacote de 250 g. Uma boa companhia para começar o dia.",
+  },
+  {
+    id: "ceramica",
+    name: "Vaso de cerâmica orgânica",
+    category: "Casa & decoração",
+    price: 89,
+    storeId: "atelie-raiz",
+    available: true,
+    art: "vase",
+    tag: "Feito à mão",
+    description:
+      "Vaso decorativo artesanal em acabamento fosco. Cada peça tem pequenas variações que a tornam única. Altura aproximada: 22 cm.",
+  },
+  {
+    id: "bolsa",
+    name: "Bolsa essencial em algodão",
+    category: "Moda",
+    price: 64.9,
+    storeId: "linha-leve",
+    available: true,
+    art: "bag",
+    tag: "Escolha local",
+    description:
+      "Bolsa de algodão encorpado, reutilizável, com alças reforçadas. Prática para levar seus essenciais e suas descobertas locais.",
+  },
+  {
+    id: "sabonete",
+    name: "Sabonete botânico artesanal",
+    category: "Bem-estar",
+    price: 22,
+    storeId: "essencia",
+    available: true,
+    art: "soap",
+    tag: "Natural",
+    description:
+      "Sabonete artesanal com fragrância suave e ingredientes de origem vegetal. Barra de 100 g para transformar o cuidado diário em uma pausa.",
+  },
+  {
+    id: "pao",
+    name: "Pão de fermentação natural",
+    category: "Alimentação",
+    price: 28,
+    storeId: "casa-do-grao",
+    available: true,
+    art: "bread",
+    description:
+      "Casca crocante e interior macio. Pão artesanal de fermentação longa, aproximadamente 500 g.",
+  },
+  {
+    id: "caneca",
+    name: "Caneca de cerâmica areia",
+    category: "Casa & decoração",
+    price: 48,
+    storeId: "atelie-raiz",
+    available: false,
+    art: "cup",
+    description:
+      "Caneca artesanal de 300 ml em tons naturais. Uma peça para seus momentos de café ou chá.",
+  },
+  {
+    id: "camiseta",
+    name: "Camiseta básica de algodão",
+    category: "Moda",
+    price: 79.9,
+    storeId: "linha-leve",
+    available: true,
+    art: "shirt",
+    description:
+      "Modelagem confortável em algodão. Modelo demonstrativo na cor verde, com tamanhos a consultar na loja.",
+  },
+  {
+    id: "massagem",
+    name: "Massagem relaxante · 50 min",
+    category: "Serviços",
+    price: 120,
+    storeId: "essencia",
+    available: true,
+    art: "wellness",
+    description:
+      "Sessão demonstrativa de massagem relaxante de 50 minutos. Atendimento e agendamento serão combinados diretamente com o estabelecimento quando houver contatos reais.",
+  },
+];
