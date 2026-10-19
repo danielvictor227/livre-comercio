@@ -61,9 +61,9 @@ Para uma base real, incluir paginação, consultas indexadas, limites, tratament
 
 Não há SDK instalado ou autenticação simulada neste frontend consolidado. A equipe deverá configurar o projeto, instalar o SDK oficial, implementar um serviço de sessão e suas telas, observar o estado de autenticação e proteger ações também por regras no servidor. O localStorage de favoritos não representa sessão autenticada. Sincronização de favoritos deverá definir uma estratégia de migração e união da coleção local.
 
-### Google Maps JavaScript API
+### Mapa (React Leaflet e OpenStreetMap)
 
-A área em Estabelecimentos é uma mensagem informativa, não um mapa. Substituí-la por componente de mapa após fornecer coordenadas reais, habilitar a API e configurar a chave com restrições de domínio/API, cobrança e consentimentos pertinentes. Não geocodificar nem sugerir rotas para os endereços fictícios. Há somente campos vazios de exemplo em `.env.example`.
+O mapa da tela Estabelecimentos já está implementado com React Leaflet e mosaicos do OpenStreetMap (ver "Complemento da integração geográfica" ao final). A Google Maps JavaScript API foi usada apenas na prova de conceito do 4º período e não é utilizada nesta versão, por isso não há chave de API a configurar. Com dados reais, as coordenadas das lojas virão do Firestore, e a geocodificação de endereços deverá respeitar a política de uso do serviço escolhido.
 
 ### Contatos
 
